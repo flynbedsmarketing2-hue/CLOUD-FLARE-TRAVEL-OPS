@@ -19,30 +19,11 @@ function getStore(): StoreState {
 }
 
 async function loadPersistedProducts(): Promise<Product[] | null> {
-  if (process.env.NODE_ENV === 'production') {
-    return null;
-  }
-
-  try {
-    const fs = await import('fs/promises');
-    const data = await fs.readFile('/tmp/travelops-products.json', 'utf-8');
-    return JSON.parse(data) as Product[];
-  } catch {
-    return null;
-  }
+  return null;
 }
 
 async function persistProducts(products: Product[]): Promise<void> {
-  if (process.env.NODE_ENV === 'production') {
-    return;
-  }
-
-  try {
-    const fs = await import('fs/promises');
-    await fs.writeFile('/tmp/travelops-products.json', JSON.stringify(products, null, 2));
-  } catch {
-    // Ignore persistence issues in serverless environments.
-  }
+  void products;
 }
 
 export async function listProducts(): Promise<Product[]> {

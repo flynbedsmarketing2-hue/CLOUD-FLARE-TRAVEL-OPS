@@ -56,5 +56,4 @@ public/           # Static assets
 
 ## Notes
 
-- Product data is stored in memory; in dev it also persists to `/tmp/travelops-products.json`.
-- Persistence is disabled in production to keep Cloudflare Pages deployments read-only.
+- Product data is stored in memory only (Edge runtime has no filesystem persistence).
