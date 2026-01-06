@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { deleteProduct, getProduct, updateProduct } from '@/lib/store';
 
+export const runtime = 'edge';
+
 interface Params {
   params: { id: string };
 }

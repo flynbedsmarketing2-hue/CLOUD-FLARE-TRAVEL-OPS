@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { createProduct, listProducts } from '@/lib/store';
 
+export const runtime = 'edge';
+
 export async function GET() {
   const products = await listProducts();
   return NextResponse.json({ data: products });

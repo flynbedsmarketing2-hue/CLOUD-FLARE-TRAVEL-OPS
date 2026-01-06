@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation';
 import { ProductForm } from '@/components/products/ProductForm';
 import { getProduct } from '@/lib/store';
 
+export const runtime = 'edge';
+
 interface PageProps {
   params: { id: string };
 }
