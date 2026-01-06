@@ -1,0 +1,26 @@
+[
+  {
+    "id": "prod_001",
+    "name": "Northern Lights Escape",
+    "destination": "Reykjavik, Iceland",
+    "price": 2890,
+    "status": "published",
+    "updatedAt": "2024-07-15T10:30:00.000Z"
+  },
+  {
+    "id": "prod_002",
+    "name": "Kyoto Culinary Trail",
+    "destination": "Kyoto, Japan",
+    "price": 2140,
+    "status": "draft",
+    "updatedAt": "2024-07-12T15:15:00.000Z"
+  },
+  {
+    "id": "prod_003",
+    "name": "Patagonia Expedition",
+    "destination": "Torres del Paine, Chile",
+    "price": 3560,
+    "status": "published",
+    "updatedAt": "2024-07-10T08:45:00.000Z"
+  }
+]
