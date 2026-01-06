@@ -41,6 +41,7 @@ Then visit `http://localhost:3000`.
 5. Set the Node version to 18 or newer in the Pages build settings (or via `NODE_VERSION`).
 6. Deploy. No environment variables are required.
 
+> Cloudflare Pages handles deploys directly from your GitHub build. You do not need to run `wrangler deploy`.
 For more details, see [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
 ## Repository layout

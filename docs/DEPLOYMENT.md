@@ -13,6 +13,7 @@
 3. Use the build settings above.
 4. Deploy. No environment variables are required.
 
+> Deployments are handled by Cloudflare Pages after each GitHub push. You do not need to run `wrangler deploy`.
 ## Local preview
 
 ```bash
